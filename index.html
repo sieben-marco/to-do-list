@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input placeholder="Clique aqui e pressione alguma tecla." size="28">
+
+    <ul></ul>
+    
+    <script>
+        function logkey(event) {
+            // console.log(`You pressed "${event.key}".`);
+
+            // document.write(`You pressed "${event.key}".`);
+            let output = document.querySelector("p");
+            output.textContent += event.key + " ";
+        }
+
+        let textBox = document.querySelector("input");
+        textBox.addEventListener("keydown", logkey);
+    </script>
+</body>
+</html>
