@@ -17,7 +17,7 @@
 
             // document.write(`You pressed "${event.key}".`);
             let item = document.createElement("li");
-            item.textContent += event.key + " ";
+            item.textContent += event.code + " ";
             let output = document.querySelector("ul");
             output.appendChild(item);
         }
