@@ -16,8 +16,10 @@
             // console.log(`You pressed "${event.key}".`);
 
             // document.write(`You pressed "${event.key}".`);
-            let output = document.querySelector("p");
-            output.textContent += event.key + " ";
+            let item = document.createElement("li");
+            item.textContent += event.key + " ";
+            let output = document.querySelector("ul");
+            output.appendChild(item);
         }
 
         let textBox = document.querySelector("input");
